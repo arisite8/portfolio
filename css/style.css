@@ -1,5 +1,5 @@
 body {
-  font-family: 'Questrial', sans-serif,"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  font-family: 'Questrial', sans-serif, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: 15px;
   letter-spacing: .05em;
   color: #333;
@@ -54,7 +54,7 @@ img {
   font-size: 34px;
   font-weight: bold;
   line-height: 1;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
   letter-spacing: .05em;
   color: #333;
@@ -75,7 +75,7 @@ img {
   z-index: 1;
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, .1);
 }
 
 .header .container {
@@ -117,6 +117,7 @@ img {
   letter-spacing: .05em;
   color: #333;
 }
+
 .gnav-item a:after {
   position: absolute;
   bottom: 0;
@@ -138,7 +139,7 @@ img {
  メインビジュアル
 ---------------------------------*/
 /* kv */
-.kv{
+.kv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,16 +147,16 @@ img {
   text-align: center;
 }
 
-.kv .main-copy{
+.kv .main-copy {
   color: #fff;
   font-size: 60px;
-  /* font-weight: bold; */
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 5px;
   letter-spacing: .1em;
 }
 
-.kv .sub-copy{
+.kv .sub-copy {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -171,7 +172,7 @@ img {
 }
 
 /* video */
-.video{
+.video {
   width: 100%;
   height: 100vh;
   background: url(../img/kv-alternative.jpg) no-repeat center/cover;
@@ -182,7 +183,7 @@ img {
   z-index: -1;
 }
 
-.video::after{
+.video::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -194,7 +195,7 @@ img {
   opacity: .3;
 }
 
-.video video{
+.video video {
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -208,12 +209,22 @@ img {
 /*--------------------------------
  Works
 ---------------------------------*/
+
+.works h3 {
+  font-size: 20px;
+  margin: 3rem 0 1.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
 .works-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 1000px;
-  margin: 0 auto;}
+  margin: 0 auto;
+  text-align: center;
+  /* max-width: 1000px; */
+}
 
 .works-item {
   /* width: 31.74603%; */
@@ -239,16 +250,18 @@ img {
 .works-name-h {
   font-size: 12px;
   font-weight: bold;
-  margin-top: 80%;
-  margin-left: 6%;
+  margin-top: 82%;
+  margin-left: 7%;
   color: #fff;
+  text-align: left;
 }
 
 .works-info-h {
   font-size: 10px;
   margin-top: 5px;
-  margin-left: 6%;
+  margin-left: 7%;
   color: #fff;
+  text-align: left;
 }
 
 .works-name {
@@ -263,29 +276,38 @@ img {
 }
 
 .sample1 {
-	overflow:		hidden;
-	position:		relative;	/* 相対位置指定 */
+  overflow: hidden;
+  position: relative;
+  /* 相対位置指定 */
 }
+
 .sample1 .caption {
-	font-size:		100%;
-	text-align: 		center;
-	padding-top:		70px;
-	color:			#fff;
+  font-size: 100%;
+  text-align: center;
+  padding-top: 70px;
+  color: #fff;
 }
+
 .sample1 .mask {
-	width:			100%;
-	height:			100%;
-	position:		absolute;	/* 絶対位置指定 */
-	top:		0;
-	left:		0;
-	opacity:		0;	/* マスクを表示しない */
-	background-color:	rgba(0,0,0,0.6);	/* マスクは半透明 */
-	-webkit-transition:	all 0.2s ease;
-	transition:		all 0.2s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* 絶対位置指定 */
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* マスクを表示しない */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* マスクは半透明 */
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
+
 .sample1:hover .mask {
-	opacity:		1;	/* マスクを表示する */
-  padding-left:		5px;	/* 右にずらす */
+  opacity: 1;
+  /* マスクを表示する */
+  padding-left: 5px;
+  /* 右にずらす */
 }
 
 /*--------------------------------
@@ -335,14 +357,17 @@ img {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .profile-img {
   width: 20%;
   margin-right: 30px;
   border-radius: 50%;
 }
+
 .profile-img img {
   border-radius: 50%;
 }
+
 .profile-body {
   flex: 1;
 }
@@ -371,6 +396,7 @@ img {
 .contact-text {
   margin-top: 10px;
 }
+
 /*--------------------------------
  ページトップ
 ---------------------------------*/
@@ -389,14 +415,14 @@ img {
   transition: .3s;
   opacity: 0;
   visibility: hidden;
-  }
+}
 
 .page-top .material-icons-outlined {
   vertical-align: bottom;
   color: #fff;
 }
 
-.active{
+.active {
   opacity: 0.6;
   visibility: visible;
 }
@@ -442,7 +468,7 @@ img {
 }
 
 .article-body img {
-  box-shadow: 0px 0px 5px;
+  box-shadow: 0px 0px 8px #777777ad;
 }
 
 .article-body h3 {
@@ -456,7 +482,8 @@ img {
   margin-top: 50px;
 }
 
-.article-body h3::before {
+.article-body h3::before,
+.works h3::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -477,9 +504,9 @@ img {
   text-align: center;
 }
 
-/*media Queries 767
+/*media Queries 959
 ----------------------------------------------------*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 959px) {
   body {
     font-size: 14px;
   }
@@ -495,7 +522,6 @@ img {
   /* 見出し */
   .title {
     font-size: 26px;
-    margin-bottom: 20px;
   }
 
   .lead {
@@ -546,11 +572,11 @@ img {
   }
 
 
-  .kv .main-copy{
+  .kv .main-copy {
     font-size: 50px;
   }
 
-  .kv .sub-copy{
+  .kv .sub-copy {
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -560,7 +586,7 @@ img {
     line-height: 1.7;
   }
 
-  
+
   .mv {
     height: 75vh;
   }
@@ -572,6 +598,7 @@ img {
   .mv-title {
     font-size: 30px;
   }
+
   .mv-subtitle {
     font-size: 16px;
     margin-bottom: 20px;
@@ -629,6 +656,7 @@ img {
   .profile {
     display: block;
   }
+
   .profile-img {
     width: 150px;
     margin: 0 auto;
@@ -650,7 +678,7 @@ img {
     height: 45px;
     bottom: 3px;
     right: 5px;
-    }
+  }
 
   /* フッター */
   .footer {
